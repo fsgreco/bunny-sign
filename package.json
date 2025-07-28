@@ -1,0 +1,29 @@
+{
+  "name": "bunny-sign",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "if command -v lefthook > /dev/null 2>&1 && [ -d \".git\" ]; then lefthook install; fi",
+    "lint": "eslint . --fix",
+    "normalize": "prettier --write '**/*.{js,ts,cjs,mjs,jsx,tsx}'",
+    "check": "npm run normalize && npm run lint"
+  },
+  "author": "Santiago Greco <fsgreco@fastmail.com> (https://github.com/fsgreco)",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.3.0",
+    "lefthook": "^1.12.2",
+    "prettier": "^3.6.2"
+  }
+}

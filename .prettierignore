@@ -1,0 +1,9 @@
+# # Ignore everything:
+# /*
+# # Except my src app ( but only .ts and .vue files, ignore .js files):
+# !src/
+# !src/**/*.ts
+# !src/**/*.vue
+# src/**/*.js
+
+**/*.config.*
