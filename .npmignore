@@ -1,0 +1,9 @@
+.gitattributes
+.prettier*
+lefthook.yml
+.editorconfig
+eslint.config.js
+jsconfig.json
+*.cast
+
+*.test.js
