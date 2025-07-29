@@ -28,7 +28,7 @@
     "prettier": "^3.6.2"
   },
   "bin": {
-    "bunny-sign": "./src/cli.js"
+    "bunny-sign": "src/cli.js"
   },
   "dependencies": {
     "log-update": "^6.1.0"
