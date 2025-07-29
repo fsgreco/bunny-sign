@@ -7,7 +7,8 @@
     "postinstall": "if command -v lefthook > /dev/null 2>&1 && [ -d \".git\" ]; then lefthook install; fi",
     "lint": "eslint . --fix",
     "normalize": "prettier --write '**/*.{js,ts,cjs,mjs,jsx,tsx}'",
-    "check": "npm run normalize && npm run lint"
+    "check": "npm run normalize && npm run lint",
+    "test": "node ./src/bunny-sign.test.js"
   },
   "author": "Santiago Greco <fsgreco@fastmail.com> (https://github.com/fsgreco)",
   "license": "MIT",
