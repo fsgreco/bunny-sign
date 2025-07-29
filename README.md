@@ -1,4 +1,6 @@
-# 🐰 bunny-sign
+# 🐰 Animated bunny sign for your terminal
+
+This package lets you display animated messages with an adorable bunny holding a sign. Because why not?
 
 ```
  |￣￣￣￣￣￣￣￣￣￣￣|
@@ -12,19 +14,14 @@
    /    づ
 ```
 
-
 ## What is this madness?
 
 Ever wished your terminal could be 44% cuter?  
-
 Tired of boring `console.log` messages that lack ears and whiskers? 
 
-Here, thanks me later:
+Here you have:
 
-// TODO video here
-
-
-This package lets you display messages with an adorable bunny holding a sign. Because why not?
+[![asciicast](https://asciinema.org/a/PysYe4p2XqnyO7eI0YeYFYEH1.svg)](https://asciinema.org/a/PysYe4p2XqnyO7eI0YeYFYEH1)
 
 ### It features
 
