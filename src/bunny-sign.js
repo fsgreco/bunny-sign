@@ -10,7 +10,7 @@ import { useAscii } from './utils.js'
   /    づ
 */
 
-export const eyes = useAscii ? ['•', 'o', '•', 'O', '^', '•'] : ['●', '○', '•', "'", '^']
+export const eyes = useAscii ? ['•', 'o', '•', 'O', '^'] : ['•', '●', '○', 'o', "'", '^']
 
 export const mouths = useAscii ? ['*'] : ['ㅅ']
 
