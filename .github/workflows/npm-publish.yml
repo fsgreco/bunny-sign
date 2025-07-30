@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout project
+        uses: actions/checkout@v3
+        
+      - name: Publish on npm
+        id: publish-npm
+        uses: JS-DevTools/npm-publish@v2.2.1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+      # - name: Notify new version via Telegram
+      #   if: steps.publish-npm.outputs.type 
+      #   run: |
+      #     curl -s \
+      #     -d "chat_id=${{ secrets.CHAT_ID }}" \
+      #     -d "text=📦 <strong>${{ github.repository }}</strong>:%0ANew version published <pre>v${{ steps.publish-npm.outputs.version }}</pre>" \
+      #     https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?parse_mode=html > /dev/null
