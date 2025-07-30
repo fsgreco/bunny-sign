@@ -32,5 +32,9 @@
   },
   "dependencies": {
     "log-update": "^6.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsgreco/bunny-sign.git"
   }
 }
